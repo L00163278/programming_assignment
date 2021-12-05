@@ -21,13 +21,20 @@ import re
 #
 def ssh_connection(ip):
     """
+
+            SSH method of application
+            Connection test to a VM using SSH port
+            Parameters:
+             ip
+            Returns:
+             none
     """
     try:
         username = "l00163278"
         password = "Qwerty123$"
 
         print("Establishing a connection...")
-        session = paramiko.SSHClient()
+        session = paramiko.SSHClient()  # assigning SSH client
         session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         session.connect(ip.rstrip("\n"), username=username, password=password)
         connection = session.invoke_shell()
@@ -46,4 +53,12 @@ def ssh_connection(ip):
 
 
 if __name__ == "__main__":
+    '''
+        Main method of application
+        Connection test to a VM using SSH port
+        Parameters:
+        none
+        Returns:
+        none
+         '''
     ssh_connection("192.168.150.128")

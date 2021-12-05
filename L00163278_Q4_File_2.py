@@ -18,7 +18,14 @@ from datetime import datetime
 
 def port_scan():
     """
+        Port Scan method of connection
+        Connecting to the ports
+        Parameters:
+        none
+        Returns:
+        none
     """
+
     # Clear the screen  #use clear if running in  *nix
     subprocess.call("cls", shell=True)
 
@@ -73,4 +80,12 @@ def port_scan():
 
 
 if __name__ == "__main__":
+    """
+        Main method of generating port details
+        Display which ports are open
+        Parameters:
+        none
+        Returns:
+        none
+        """
     port_scan()

@@ -6,7 +6,7 @@
 # Version : v1.0.0
 # Licensing : (C) 2021 Rohit Mishra, LYIT
 #              Available under GNU Public License (GPL)
-# Description : Creating folder using python script.
+# Description : Executing commands using python script.
 # -----------------------------
 """
 
@@ -22,6 +22,12 @@ import re
 #
 def ssh_connection(ip):
     """
+        SSH method connecting to ports
+        SSH connection
+        Parameters:
+        ip
+        Returns:
+        none
     """
     try:
         username = "l00163278"
@@ -51,4 +57,12 @@ def ssh_connection(ip):
 
 
 if __name__ == "__main__":
+    """
+        Main method to execute script
+        Execution of commands
+        Parameters:
+        none
+        Returns:
+        none
+    """
     ssh_connection("192.168.150.128")
